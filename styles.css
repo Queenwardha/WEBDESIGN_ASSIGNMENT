@@ -1,0 +1,273 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header-section {
+    background-color: black;
+    padding: 1rem 15%;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 1rem;
+}
+
+.header-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 1rem;
+}
+
+.header-image {
+    flex: 1;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Button */
+.button {
+    background-color: #3882F6;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 4rem 15%;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 2rem;
+}
+
+.gallery-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.card-image {
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #E5E7EB;
+    padding: 4rem 15%;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 24px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Signup Section */
+.signup-section {
+    padding: 4rem 15%;
+}
+
+.cta-container {
+    background-color: #3882F6;
+    color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-text h3 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .header-text h1 {
+        font-size: 36px;
+    }
+
+    .header-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .gallery-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .gallery-section h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .quote {
+        font-size: 24px;
+    }
+
+    .quote-author {
+        font-size: 18px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+}
+
+/* Small screens (mobile, 480px and below) */
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .gallery-section h2 {
+        font-size: 24px;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 16px;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+
+    .quote-author {
+        font-size: 16px;
+    }
+
+    .cta-text h3 {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 1.5rem;
+    }
+}
